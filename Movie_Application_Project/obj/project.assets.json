@@ -3636,24 +3636,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\w0456204\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\mark-\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\NSCC\\WINTER2023\\PROG2500\\Assignments\\Assignment_2\\Movie_Application_Project\\Movie_Application_Project\\Movie_Application_Project.csproj",
+      "projectUniqueName": "E:\\NSCC\\Winter Term 2023\\Windows Programming\\Group Project\\MyBranch\\Movie_Application_Project\\Movie_Application_Project.csproj",
       "projectName": "Movie_Application_Project",
-      "projectPath": "E:\\NSCC\\WINTER2023\\PROG2500\\Assignments\\Assignment_2\\Movie_Application_Project\\Movie_Application_Project\\Movie_Application_Project.csproj",
-      "packagesPath": "C:\\Users\\w0456204\\.nuget\\packages\\",
-      "outputPath": "E:\\NSCC\\WINTER2023\\PROG2500\\Assignments\\Assignment_2\\Movie_Application_Project\\Movie_Application_Project\\obj\\",
+      "projectPath": "E:\\NSCC\\Winter Term 2023\\Windows Programming\\Group Project\\MyBranch\\Movie_Application_Project\\Movie_Application_Project.csproj",
+      "packagesPath": "C:\\Users\\mark-\\.nuget\\packages\\",
+      "outputPath": "E:\\NSCC\\Winter Term 2023\\Windows Programming\\Group Project\\MyBranch\\Movie_Application_Project\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\w0456204\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\mark-\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3720,7 +3715,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
