@@ -18,6 +18,8 @@ namespace Movie_Application_Project
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+    ///Hi
     public partial class MainWindow : Window
     {
         public MainWindow()
