@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:Movie_Application_Project"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="801">
-    <Grid> 
 
-    </Grid>
+    <DockPanel>
+        <Frame x:Name="mainFrame" Width="Auto" Height="Auto" NavigationUIVisibility="Hidden"></Frame>
+        <TextBlock Text="Main Window"/>
+    </DockPanel>
+
+    
+    
 </Window>

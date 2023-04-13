@@ -22,9 +22,16 @@ namespace Movie_Application_Project
     ///Hi
     public partial class MainWindow : Window
     {
+        private Page directorsPage;
+        //public Pages.DirectorsPage directorsPage { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+            directorsPage = new Pages.DirectorsPage();
+
+
+            //Just for testing Directors Page, while it is not configured (Gabriel)
+            mainFrame.NavigationService.Navigate(directorsPage);
         }
     }
 }
