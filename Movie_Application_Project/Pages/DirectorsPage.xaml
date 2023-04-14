@@ -30,7 +30,11 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        
+                        <TextBlock Text="{Binding JobCategory }"/>
+                        <TextBlock Text="{Binding Name }"/>
+                        <TextBlock Text="{Binding PrimaryName }"/>
+                        <TextBlock Text="{Binding PrimaryProfession }"/>
+
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
