@@ -33,7 +33,12 @@ namespace Movie_Application_Project
 
 
             //Just for testing Directors Page, while it is not configured (Gabriel)
-            mainFrame.NavigationService.Navigate(moviesPage);
+           // mainFrame.NavigationService.Navigate(moviesPage);
+        }
+
+        private void HomeBtn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
