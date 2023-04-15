@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Movie_Application_Project.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,21 +23,40 @@ namespace Movie_Application_Project
     ///Hi
     public partial class MainWindow : Window
     {
-        private Page directorsPage;
-        //public Pages.DirectorsPage directorsPage { get; set; }
+        public Pages.DirectorsPage directorsPage { get; set; }
         public Pages.MoviesPage moviesPage { get; set; }
+        public Pages.HomePage homePage { get; set; } 
+        
         public MainWindow()
         {
             InitializeComponent();
             directorsPage = new Pages.DirectorsPage();
             moviesPage = new Pages.MoviesPage();
+            homePage = new Pages.HomePage();
+            mainFrame.NavigationService.Navigate(homePage);
+
 
 
             //Just for testing Directors Page, while it is not configured (Gabriel)
-           // mainFrame.NavigationService.Navigate(moviesPage);
+            /**
+             * Hi Gabriel and Mark, Just so we can test individually, I have created dir,
+             * movie and actors btns for tesing.
+             * */
+
         }
 
-        private void HomeBtn_Click(object sender, RoutedEventArgs e)
+        private void DirectorBtn_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.NavigationService.Navigate(directorsPage);
+
+        }
+        private void MoviesBtn_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.NavigationService.Navigate(moviesPage);
+
+
+        }
+        private void ActorsBtn_Click(object sender, RoutedEventArgs e)
         {
 
         }

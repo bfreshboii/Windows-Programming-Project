@@ -7,7 +7,13 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Pages\ActorsPage .xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\DirectorsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\HomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\MoviesPage.xaml.cs">
@@ -18,7 +24,13 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Pages\ActorsPage .xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pages\DirectorsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\HomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\MoviesPage.xaml">
