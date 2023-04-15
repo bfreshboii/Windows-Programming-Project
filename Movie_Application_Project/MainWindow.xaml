@@ -5,13 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Movie_Application_Project"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="801">
-
-    <DockPanel>
-        <Frame x:Name="mainFrame" Width="Auto" Height="Auto" NavigationUIVisibility="Hidden"></Frame>
-        <TextBlock Text="Main Window"/>
-    </DockPanel>
+        Title="MainWindow" Height="570" Width="520">
 
     
-    
+
+    <StackPanel Orientation="Vertical" Width="90">
+        <Button x:Name="HomeBtn" Click="HomeBtn_Click"></Button>
+    </StackPanel>
+
 </Window>
