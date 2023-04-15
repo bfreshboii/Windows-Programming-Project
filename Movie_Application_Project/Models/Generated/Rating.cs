@@ -12,4 +12,13 @@ public partial class Rating
     public int? NumVotes { get; set; }
 
     public virtual Title Title { get; set; } = null!;
+
+    //public string FormattedRating
+    //{
+
+    //    get
+    //    {
+    //        return string.Format("Rating: {0}", AverageRating);
+    //    }
+    //}
 }
