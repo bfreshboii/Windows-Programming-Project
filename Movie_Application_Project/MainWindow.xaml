@@ -5,12 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Movie_Application_Project"
         mc:Ignorable="d"
-        Title="MainWindow" Height="570" Width="520">
+        Title="MainWindow" Height="570" Width="600">
 
     
 
-    <StackPanel Orientation="Vertical" Width="90">
-        <Button x:Name="HomeBtn" Click="HomeBtn_Click"></Button>
+    <StackPanel Orientation="Vertical" Width="600">
+        <Button x:Name="Directors" Content="Directors" Click="DirectorBtn_Click" Margin="12" Width="100" Height=" 50"></Button>
+        <Button x:Name="Movies" Content ="Movies" Click="MoviesBtn_Click"  Margin="12" Width="100"  Height=" 50"></Button>
+        <Button x:Name="Actors" Content ="Actors" Click="ActorsBtn_Click" Margin="12" Width="100" Height=" 50"></Button>
+
+
+        <Frame x:Name="mainFrame" Height="Auto" Width=" Auto" NavigationUIVisibility="Hidden"></Frame>
+
     </StackPanel>
 
 </Window>
