@@ -6,9 +6,89 @@
       xmlns:local="clr-namespace:Movie_Application_Project.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="MoviesPage">
+      Title="MoviesPage" Loaded="Page_Loaded">
 
-    <Grid>
-        
-    </Grid>
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <BitmapImage x:Key="search" UriSource="/Images/search.png"/>
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+            <CollectionViewSource x:Key="moviesViewSource"></CollectionViewSource>
+        </ResourceDictionary>
+    </Page.Resources>
+
+
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Movies Info" FontSize="20"></TextBlock>
+            <Label Content="Search Movies"></Label>
+            <TextBox x:Name="textSearchSong" Width="300" FontSize="20" Height="25"></TextBox>
+            <Button x:Name="btnSearchMovies" Click="btnSearchMovies_Click" Height="25" Content="Search">
+                
+                <!--<Image Source="{StaticResource search}"/>-->
+            </Button>
+        </StackPanel>
+
+        <ListView x:Name="moviesListView" ItemsSource="{Binding Source={StaticResource moviesViewSource}}"
+                  ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible"
+                  Height="400" Width="750" >
+            <ListView.ItemTemplate>
+                <DataTemplate >
+                    <!--DataType="local:MoviesPage">-->
+                    <StackPanel Width="750" Orientation="Horizontal" >
+
+                        <DockPanel Width="710">
+                            <StackPanel Orientation="Vertical" DockPanel.Dock="Right">
+                                <TextBlock Text="{Binding votes}"></TextBlock>
+                                <TextBlock Text="{Binding adult}"></TextBlock>
+                                <TextBlock Text="{Binding run}"></TextBlock>
+                                <Expander Header="View Genres">
+                                    <ListView ItemsSource="{Binding genre}">
+                                        <ListView.ItemTemplate>
+                                            <DataTemplate DataType="local:Title">
+                                                <StackPanel Width="200">
+                                                    <TextBlock Text="{Binding Name}"></TextBlock>
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </ListView.ItemTemplate>
+                                    </ListView>
+                                </Expander>
+                                <Expander Header="View Names">
+                                    <ListView ItemsSource="{Binding names}">
+                                        <ListView.ItemTemplate>
+                                            <DataTemplate DataType="local:Title">
+                                                <StackPanel Width="200">
+                                                    <TextBlock Text="{Binding PrimaryName}"></TextBlock>
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </ListView.ItemTemplate>
+                                    </ListView>
+                                </Expander>
+                            </StackPanel>
+                        <StackPanel Orientation="Vertical"
+                            DockPanel.Dock="Left">
+                            <TextBlock Text="{Binding title}"></TextBlock>
+                            <TextBlock Text="{Binding rating}"></TextBlock>
+                            </StackPanel>
+
+                        </DockPanel>
+
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <!--<ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Artists Name" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+                    -->
+            <!--<GridView-->
+            <!--Column Header="Price per unit" DisplayMemberBinding="{Binding FormattedPrice}"></GridViewColumn>-->
+            <!--
+                </GridView>
+            </ListView.View>-->
+        </ListView>
+
+
+    </StackPanel>
 </Page>

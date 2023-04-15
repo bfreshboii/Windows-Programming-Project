@@ -24,14 +24,16 @@ namespace Movie_Application_Project
     {
         private Page directorsPage;
         //public Pages.DirectorsPage directorsPage { get; set; }
+        public Pages.MoviesPage moviesPage { get; set; }
         public MainWindow()
         {
             InitializeComponent();
             directorsPage = new Pages.DirectorsPage();
+            moviesPage = new Pages.MoviesPage();
 
 
             //Just for testing Directors Page, while it is not configured (Gabriel)
-            mainFrame.NavigationService.Navigate(directorsPage);
+            mainFrame.NavigationService.Navigate(moviesPage);
         }
     }
 }

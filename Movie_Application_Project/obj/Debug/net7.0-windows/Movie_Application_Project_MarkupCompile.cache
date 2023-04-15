@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\4 Semester\WindowsProgrammingCSharp\Assignments\GroupProject\Movie_Application_Project\obj\Debug\net7.0-windows\
+E:\NSCC\Winter Term 2023\Windows Programming\Group Project\MyBranch\Movie_Application_Project\obj\Debug\net7.0-windows\
 Movie_Application_Project
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-D:\4 Semester\WindowsProgrammingCSharp\Assignments\GroupProject\Movie_Application_Project\App.xaml
-21437432044
+E:\NSCC\Winter Term 2023\Windows Programming\Group Project\MyBranch\Movie_Application_Project\App.xaml
+3-1037343502
 
-12-1055755873
-231-615142345
-MainWindow.xaml;Pages\DirectorsPage.xaml;
+15-1928563072
+231455359251
+MainWindow.xaml;Pages\DirectorsPage.xaml;Pages\MoviesPage.xaml;
 
 False
 
