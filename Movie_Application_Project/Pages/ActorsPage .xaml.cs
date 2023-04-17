@@ -47,7 +47,7 @@ namespace Movie_Application_Project.Pages
 
         
             var query = (
-                from name in _context.Names.Take(1)
+                from name in _context.Names.Take(200)
                          where name.PrimaryName.Contains(textSearch.Text) && name.PrimaryProfession.Contains("actor") 
                          select name).Distinct();
 
