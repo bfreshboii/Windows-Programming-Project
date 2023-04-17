@@ -435,3 +435,4 @@ C:\Users\bfres\Source\Repos\Windows-Programming-Project\Movie_Application_Projec
 C:\Users\bfres\Source\Repos\Windows-Programming-Project\Movie_Application_Project\obj\Debug\net7.0-windows\Movie_Application_Project.genruntimeconfig.cache
 C:\Users\bfres\Source\Repos\Windows-Programming-Project\Movie_Application_Project\obj\Debug\net7.0-windows\ref\Movie_Application_Project.dll
 C:\Users\bfres\Source\Repos\Windows-Programming-Project\Movie_Application_Project\obj\Debug\net7.0-windows\App.baml
+C:\Users\19024\Source\Repos\Windows-Programming-Project\Movie_Application_Project\obj\Debug\net7.0-windows\App.baml
