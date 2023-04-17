@@ -8,7 +8,18 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ActorsPage">
 
-    <Grid>
-        
-    </Grid>
+    <Page.Resources>
+        <CollectionViewSource x:Key="actorsViewSource" ></CollectionViewSource>
+    </Page.Resources>
+
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="View Actors                       Search by Actors: "/>
+            <TextBox x:Name="textSearch" Width="300" FontSize="24"></TextBox>
+            <Button x:Name="btnSearch"
+                    Content="Search"
+                    Click="btnSearchClicked"/>
+        </StackPanel>
+        <!--Display-->
+    </StackPanel>
 </Page>
