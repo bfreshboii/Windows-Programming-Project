@@ -53,7 +53,7 @@ namespace Movie_Application_Project.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Movie_Application_Project;V1.0.0.0;component/pages/actorspage%20.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Movie_Application_Project;component/pages/actorspage%20.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\ActorsPage .xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

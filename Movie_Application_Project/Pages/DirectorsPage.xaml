@@ -33,7 +33,7 @@
 
 
                         <TextBlock Text="{Binding PrimaryName }"/>
-                        <TextBlock Text="{Binding PrimaryProfession }"/>
+                        
 
                     </StackPanel>
                 </DataTemplate>
