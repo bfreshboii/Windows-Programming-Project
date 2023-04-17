@@ -22,7 +22,11 @@ namespace Movie_Application_Project.Pages
     /// Interaction logic for ActorsPage.xaml
     /// </summary>
     public partial class ActorsPage : Page
+
     {
+        private Name name = new Name();
+        private Principal principal = new Principal();
+
         private readonly ImdbProjectContext _context = new ImdbProjectContext();
         private CollectionViewSource actorsViewSource;
         public ActorsPage()
@@ -36,19 +40,19 @@ namespace Movie_Application_Project.Pages
         }
         public void btnSearchClicked(object sender, RoutedEventArgs e)
         {
-            Name name = _context.Names.Find(100);
-            _context.Entry(name)
-                    .Collection(p => p.Principals)
-                    .Query()
-                    .Where(p => p.JobCategory.Contains(textSearch.Text))
-                    .Load();
+            //Principal name = _context.Principals.Find();
+            //_context.Entry(name)
+            //        .Collection(p => p.Principal)
+            
 
-
-            var query =
-                from p in _context.Principals
-                select p;
+        
+            var query = (
+                from name in _context.Names.Take(1)
+                         where name.PrimaryName.Contains(textSearch.Text) && name.PrimaryProfession.Contains("actor") 
+                         select name).Distinct();
 
             actorsViewSource.Source = query.ToList();
+            actorsListView.ItemsSource = query.ToList();
 
         }
     }

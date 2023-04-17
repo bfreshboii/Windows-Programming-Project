@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l/Q8sBTH5B7uw5+P7axiJ7W2F6XG9mbARxloDTulPrGYYqDd8N3SivuvlI5AJWrn6tCBuILMhK30ny7FhVg0Wg==",
+  "dgSpecHash": "xo0utwR6S63ZL+i1+MiYwkpc6vn+evryaX+mAquZFhP1p2HXBVGsd3mzUETRlPL+GWqrflLdiv1g6Ly6RMmPLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\19024\\Source\\Repos\\Windows-Programming-Project\\Movie_Application_Project\\Movie_Application_Project.csproj",
+  "projectFilePath": "C:\\Users\\19024\\source\\repos\\Windows-Programming-Project\\Movie_Application_Project\\Movie_Application_Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\19024\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\19024\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

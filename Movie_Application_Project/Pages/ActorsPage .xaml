@@ -13,13 +13,60 @@
     </Page.Resources>
 
     <StackPanel>
-        <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Horizontal"
+                     ScrollViewer.VerticalScrollBarVisibility="Visible"
+                  ScrollViewer.CanContentScroll="True">
             <Label Content="View Actors                       Search by Actors: "/>
             <TextBox x:Name="textSearch" Width="300" FontSize="24"></TextBox>
             <Button x:Name="btnSearch"
                     Content="Search"
                     Click="btnSearchClicked"/>
         </StackPanel>
+
+
         <!--Display-->
+
+
+
+        <ListView x:Name="actorsListView"
+                  ScrollViewer.VerticalScrollBarVisibility="Visible"
+                  ScrollViewer.CanContentScroll="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal"
+                                ScrollViewer.CanContentScroll="True"
+                                ScrollViewer.VerticalScrollBarVisibility="Visible">
+
+
+                        <TextBlock Text="{Binding PrimaryName }"/>
+                        <Expander Margin=" 20" Header="View Biography" FontSize="20">
+
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="{Binding FormattedBirthYear}" />
+                                            <Label Content = "{Binding BirthYear}" ></Label>
+                                            <TextBlock Text="{Binding FormattedDeathYear}"/>
+                                            <Label Content = "{Binding DeathYear}" ></Label>
+
+                            </StackPanel>
+                          
+
+                        </Expander>
+
+
+
+
+
+
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+
+        </ListView>
+
     </StackPanel>
+
+
+
+
 </Page>
