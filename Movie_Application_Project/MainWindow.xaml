@@ -5,18 +5,65 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Movie_Application_Project"
         mc:Ignorable="d"
-        Title="MainWindow" Height="570" Width="600">
+        Title="MainWindow" Height="570" Width="600" Background="LightBlue">
+    <Window.Resources>
+        <ResourceDictionary>
+            <BitmapImage x:Key="home" UriSource="/Images/home.png"/>
+            <BitmapImage x:Key="movie" UriSource="/Images/movies.png"/>
+            <BitmapImage x:Key="actor" UriSource="/Images/actor.png"/>
+            <BitmapImage x:Key="director" UriSource="/Images/director.png"/>
+        </ResourceDictionary>
+    </Window.Resources>
 
-    
-
-    <StackPanel Orientation="Vertical" Width="600">
-        <Button x:Name="Directors" Content="Directors" Click="DirectorBtn_Click" Margin="12" Width="100" Height=" 50"></Button>
-        <Button x:Name="Movies" Content ="Movies" Click="MoviesBtn_Click"  Margin="12" Width="100"  Height=" 50"></Button>
-        <Button x:Name="Actors" Content ="Actors" Click="ActorsBtn_Click" Margin="12" Width="100" Height=" 50"></Button>
-
-
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Pages">
+                <MenuItem Header="_Home" >
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource home}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="_ViewActor" Click="ActorsBtn_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource actor}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="_ViewDirectors" Click="DirectorBtn_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource director}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="_ViewMovies" Click="MoviesBtn_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource movie}"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <TextBlock Text="Welcome To The Movie Application" DockPanel.Dock="Top"></TextBlock>
+        <ToolBar DockPanel.Dock="Left">
+                <StackPanel Orientation="Vertical" Width="70">
+                <Button ToolTip="View Home Page" x:Name="HomeButton" Click="HomeButton_Click">
+                    <Image Source="{StaticResource home}"/>
+                </Button>
+                <Button ToolTip="View Actors Page" x:Name="ActorButton" Click="ActorsBtn_Click">
+                    <Image Source="{StaticResource actor}"/>
+                </Button>
+                <Button ToolTip="View Directors Page" x:Name="DirectorButton" Click="DirectorBtn_Click">
+                    <Image Source="{StaticResource director}"/>
+                </Button>
+                <Button ToolTip="View Movies Page" x:Name="MovieButton" Click="MoviesBtn_Click">
+                    <Image Source="{StaticResource movie}"/>
+                </Button>
+                </StackPanel>
+            </ToolBar>
         <Frame x:Name="mainFrame" Height="Auto" Width=" Auto" NavigationUIVisibility="Hidden"></Frame>
-
-    </StackPanel>
-
+    </DockPanel>
 </Window>
+
+<!--<a href="https://www.flaticon.com/free-icons/director" title="director icons">Director icons created by Eucalyp - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/actor" title="actor icons">Actor icons created by Wichai.wi - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/cinema" title="cinema icons">Cinema icons created by Good Ware - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/home-button" title="home button icons">Home button icons created by Freepik - Flaticon</a>
+-->
+

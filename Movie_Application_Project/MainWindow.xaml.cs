@@ -23,6 +23,7 @@ namespace Movie_Application_Project
     ///Hi
     public partial class MainWindow : Window
     {
+        public Pages.ActorsPage actorsPage { get; set; }
         public Pages.DirectorsPage directorsPage { get; set; }
         public Pages.MoviesPage moviesPage { get; set; }
         public Pages.HomePage homePage { get; set; } 
@@ -33,6 +34,7 @@ namespace Movie_Application_Project
             directorsPage = new Pages.DirectorsPage();
             moviesPage = new Pages.MoviesPage();
             homePage = new Pages.HomePage();
+            actorsPage = new Pages.ActorsPage();
             mainFrame.NavigationService.Navigate(homePage);
 
 
@@ -48,17 +50,20 @@ namespace Movie_Application_Project
         private void DirectorBtn_Click(object sender, RoutedEventArgs e)
         {
             mainFrame.NavigationService.Navigate(directorsPage);
-
         }
         private void MoviesBtn_Click(object sender, RoutedEventArgs e)
         {
             mainFrame.NavigationService.Navigate(moviesPage);
 
-
         }
         private void ActorsBtn_Click(object sender, RoutedEventArgs e)
         {
+            mainFrame.NavigationService.Navigate(actorsPage);
+        }
 
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.NavigationService.Navigate(homePage);
         }
     }
 }

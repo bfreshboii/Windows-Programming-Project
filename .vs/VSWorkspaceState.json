@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Movie_Application_Project",
+    "\\Movie_Application_Project\\Pages"
   ],
+  "SelectedNode": "\\Movie_Application_Project\\Pages\\HomePage.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

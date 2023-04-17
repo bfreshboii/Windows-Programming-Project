@@ -4,6 +4,14 @@
              xmlns:local="clr-namespace:Movie_Application_Project"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="24"/>
+        </Style>
+        <Style x:Key="PageTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="31"/>
+        </Style>
+        <Style x:Key="Grid" TargetType="GridViewColumnHeader">
+            <Setter Property="Background" Value="#C7AD7F"/>
+        </Style>
     </Application.Resources>
 </Application>
