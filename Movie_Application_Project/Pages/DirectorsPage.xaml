@@ -12,10 +12,10 @@
         <CollectionViewSource x:Key="directorsViewSource"/>
     </Page.Resources>
 
-    
+
     <StackPanel>
         <TextBlock Text="Directors" HorizontalAlignment="Center"/>
-        
+
         <StackPanel Orientation="Horizontal">
             <TextBlock Text="IMDB Directors"/>
             <TextBox x:Name="txtSearch" Width="300"/>
@@ -30,18 +30,18 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding JobCategory }"/>
-                        <TextBlock Text="{Binding Name }"/>
+
+
                         <TextBlock Text="{Binding PrimaryName }"/>
                         <TextBlock Text="{Binding PrimaryProfession }"/>
 
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
-            
-            
+
+
         </ListView>
-        
+
     </StackPanel>
 
 
